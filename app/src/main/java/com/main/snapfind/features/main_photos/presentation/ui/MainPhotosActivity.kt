@@ -8,8 +8,6 @@ import com.main.snapfind.core.base.BaseActivity
 class MainPhotosActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-
-        }
+        setContent { MainPhotosScreen() }
     }
 }

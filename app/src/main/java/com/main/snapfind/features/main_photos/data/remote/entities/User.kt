@@ -1,10 +1,6 @@
-package com.main.snapfind.features.main_photos.data.netowrk.entities
+package com.main.snapfind.features.main_photos.data.remote.entities
 
-import com.main.snapfind.features.main_photos.data.netowrk.entities.LinksX
-import com.main.snapfind.features.main_photos.data.netowrk.entities.ProfileImage
-import com.main.snapfind.features.main_photos.data.netowrk.entities.Social
-
-data class Sponsor(
+data class User(
     val accepted_tos: Boolean,
     val bio: String,
     val first_name: String,

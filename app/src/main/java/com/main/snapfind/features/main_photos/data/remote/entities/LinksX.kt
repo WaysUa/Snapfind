@@ -1,4 +1,4 @@
-package com.main.snapfind.features.main_photos.data.netowrk.entities
+package com.main.snapfind.features.main_photos.data.remote.entities
 
 data class LinksX(
     val followers: String,

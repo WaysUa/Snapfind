@@ -1,6 +1,6 @@
-package com.main.snapfind.features.main_photos.data.netowrk.api
+package com.main.snapfind.features.main_photos.data.remote.api
 
-import com.main.snapfind.features.main_photos.data.netowrk.entities.PhotoItem
+import com.main.snapfind.features.main_photos.data.remote.entities.PhotoItem
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
