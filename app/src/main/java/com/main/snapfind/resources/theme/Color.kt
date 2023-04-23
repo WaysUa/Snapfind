@@ -1,4 +1,4 @@
-package com.main.snapfind.ui.theme
+package com.main.snapfind.resources.theme
 
 import androidx.compose.ui.graphics.Color
 

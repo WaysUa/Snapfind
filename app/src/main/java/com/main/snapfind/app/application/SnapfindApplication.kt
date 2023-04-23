@@ -1,6 +1,7 @@
 package com.main.snapfind.app.application
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class SnapfindApplication : Application() {
-}
+@HiltAndroidApp
+class SnapfindApplication : Application()

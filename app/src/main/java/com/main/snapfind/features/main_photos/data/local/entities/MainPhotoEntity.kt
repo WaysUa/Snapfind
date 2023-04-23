@@ -4,9 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class PhotoEntity(
-    @PrimaryKey
-    val id: Int,
+data class MainPhotoEntity(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     val height: Int,
-    val width: Int
+    val width: Int,
+    val imageUrl: String
 )

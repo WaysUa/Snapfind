@@ -4,13 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.main.snapfind.features.main_photos.data.local.entities.PhotoEntity
-import com.main.snapfind.features.main_photos.data.local.repositories.PhotosDao
+import com.main.snapfind.features.main_photos.data.local.entities.MainPhotoEntity
+import com.main.snapfind.features.main_photos.data.local.repositories.MainPhotosDao
 
-@Database(entities = [PhotoEntity::class], version = 1)
+@Database(entities = [MainPhotoEntity::class], version = 1)
 abstract class SnapfindDatabase : RoomDatabase() {
 
-    abstract fun photosDao(): PhotosDao
+    abstract fun photosDao(): MainPhotosDao
 
     companion object {
         private var database: SnapfindDatabase? = null
