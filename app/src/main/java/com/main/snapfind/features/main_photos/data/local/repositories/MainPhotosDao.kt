@@ -15,7 +15,9 @@ interface MainPhotosDao {
     @Query("SELECT * FROM mainphotoentity")
     fun pagingSource(): PagingSource<Int, MainPhotoEntity>
 
+    @Query("SELECT * FROM mainphotoentity")
+    fun getAllImages(): List<MainPhotoEntity>
+
     @Query("DELETE FROM mainphotoentity")
     suspend fun clearAll()
-
 }

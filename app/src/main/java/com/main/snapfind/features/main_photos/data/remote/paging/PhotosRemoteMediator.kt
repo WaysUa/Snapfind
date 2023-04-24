@@ -44,8 +44,6 @@ class PhotosRemoteMediator(
                 pageCount = state.config.pageSize
             )
 
-            Log.d("MyLog", "photos: $photos")
-
             snapfindDatabase.withTransaction {
                 if (loadType == LoadType.REFRESH) {
                     snapfindDatabase.photosDao().clearAll()
@@ -54,6 +52,8 @@ class PhotosRemoteMediator(
                 if (photoEntities != null) {
                     snapfindDatabase.photosDao().upsertPhotos(photoEntities)
                 }
+
+                Log.d("MyLog", snapfindDatabase.photosDao().getAllImages().toString())
             }
 
             MediatorResult.Success(
